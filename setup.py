@@ -9,7 +9,7 @@ setup_params = dict(
     author='Robin Walsh',
     author_email='robin@wordnik.com',
     url='http://developer.wordnik.com',
-    packages = setuptools.find_packages(),
+    packages = setuptools.find_packages(exclude=["wordnik/api/VersionChecker.py"]),
 )
 
 if __name__ == '__main__':
